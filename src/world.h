@@ -31,6 +31,7 @@ class world {
         unsigned short buildersSoFar;
         unsigned short turn;
         std::size_t selectedBuilderIndex;
+        sf::Font font;
         void build(const sf::Vector2i& pos);
         void move(const sf::Vector2i& pos);
         void place(const sf::Vector2i& pos);

@@ -23,6 +23,10 @@ void world::setup()
     }
     turn = 0;
     state = WorldState::Place;
+    if (!font.loadFromFile("arial.ttf"))
+    {
+        std::cout << "Font not loaded" << std::endl;
+    }
 }
 
 world::~world()
